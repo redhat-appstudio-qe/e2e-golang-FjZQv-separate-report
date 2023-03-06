@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-hfwb
+  namespace: e2e-demos-wfzw-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:27ad234ef77f746f3a23be61c412b0e95f180d40350ae2ae0019b2744bf300b4
+        name: my-go
+        resources: {}
+status: {}
