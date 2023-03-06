@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-go-basic-hfwb
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images-protected:FjZQv-devfile-sample-go-basic-hfwb
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:27ad234ef77f746f3a23be61c412b0e95f180d40350ae2ae0019b2744bf300b4
         name: my-go
         ports:
         - containerPort: 8081
